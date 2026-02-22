@@ -291,3 +291,68 @@
     }
   }
 }
+
+.experience {
+  background: #fff;
+
+  &__content {
+    max-width: 90rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  &__job {
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    list-style: disc;
+    margin-left: 2rem;
+
+    li {
+      font-size: 1.8rem;
+      color: grey;
+      margin-bottom: 1rem;
+      line-height: 1.7;
+    }
+  }
+}
+
+.education {
+  background: rgb(250, 250, 250);
+
+  &__content {
+    max-width: 90rem;
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
+.certifications {
+  background: #fff;
+
+  &__content {
+    max-width: 90rem;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .projects__row-content {
+      width: 100%;
+      max-width: 35rem;
+      align-items: center;
+      text-align: center;
+      padding: 3rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      background: #fff;
+
+      &-title {
+          font-size: 2.2rem;
+      }
+  }
+}
