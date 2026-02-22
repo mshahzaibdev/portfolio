@@ -40,7 +40,7 @@ headerLogoConatiner.addEventListener('click', () => {
 // --- Modal Logic
 const modal = document.getElementById("email-modal");
 const openModalBtn = document.getElementById("open-email-modal");
-const closeModalSpan = document.getElementsByClassName("modal__close")[0];
+const closeModalSpan = document.getElementsByClassName("email-modal-overlay__close")[0];
 
 if (openModalBtn && modal) {
   openModalBtn.onclick = function() {
