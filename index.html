@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Dopefolio</title>
-    <meta name="description" content="Portfolio Template for Developer" />
+    <title>Muhammad Shahzaib Tariq | AI Engineer</title>
+    <meta name="description" content="AI Engineer and ICPC Regionalist portfolio specializing in LLM applications, RAG pipelines, and sensor fusion." />
+
+    <link rel="icon" type="image/png" href="./assets/png/avatar.png" />
+    <meta property="og:title" content="Muhammad Shahzaib Tariq | AI Engineer" />
+    <meta property="og:description" content="AI Engineer and ICPC Regionalist portfolio specializing in LLM applications, RAG pipelines, and sensor fusion." />
+    <meta property="og:image" content="./assets/png/avatar.png" />
+    <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -350,9 +356,9 @@
                 Feel free to reach out to me via email for any opportunities or collaborations.
             </p>
             <div style="text-align: center;">
-                <a href="mailto:shahzaib.tariq041@gmail.com" class="btn btn--theme contact__btn">
+                <button id="open-email-modal" class="btn btn--theme contact__btn">
                     Send Email
-                </a>
+                </button>
             </div>
         </div>
       </div>
@@ -405,6 +411,18 @@
         </div>
       </div>
     </footer>
+
+    <div id="email-modal" class="modal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <h2 class="modal__heading">Choose Email Provider</h2>
+        <div class="modal__options">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shahzaib.tariq041@gmail.com" target="_blank" class="modal__btn btn btn--med btn--theme">Gmail</a>
+          <a href="https://outlook.office.com/mail/deeplink/compose?to=shahzaib.tariq041@gmail.com" target="_blank" class="modal__btn btn btn--med btn--theme">Outlook</a>
+          <a href="mailto:shahzaib.tariq041@gmail.com" class="modal__btn btn btn--med btn--theme">Default App</a>
+        </div>
+      </div>
+    </div>
 
     <script src="./index.js"></script>
   </body>

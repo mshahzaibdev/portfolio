@@ -36,3 +36,26 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+// --- Modal Logic
+const modal = document.getElementById("email-modal");
+const openModalBtn = document.getElementById("open-email-modal");
+const closeModalSpan = document.getElementsByClassName("modal__close")[0];
+
+if (openModalBtn && modal) {
+  openModalBtn.onclick = function() {
+    modal.style.display = "block";
+  }
+}
+
+if (closeModalSpan && modal) {
+  closeModalSpan.onclick = function() {
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
